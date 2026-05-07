@@ -22,6 +22,7 @@
     @apply mx-auto rounded-xl shadow-sm border border-gray-100;
   }
 }
+
 /* 마크다운 h2 제목 디자인 강제 덮어쓰기 (푸른색 + 밑줄) */
 .prose h2 {
   color: #1d4ed8 !important; /* text-blue-700 색상 강제 적용 */
@@ -29,4 +30,18 @@
   padding-bottom: 0.5rem !important;
   margin-top: 3rem !important;
   margin-bottom: 1rem !important;
+}
+
+/* 🚀 마크다운 본문 링크(a 태그) 디자인 강제 덮어쓰기 (파란색 + 밑줄) */
+.prose a {
+  color: #2563eb !important; /* 파란색 (text-blue-600) 강제 적용 */
+  text-decoration: underline !important;
+  text-underline-offset: 4px !important; /* 밑줄을 글자와 살짝 띄움 */
+  font-weight: 600 !important;
+  transition: color 0.2s ease; /* 마우스 올릴 때 부드러운 전환 효과 */
+}
+
+/* 마우스 호버 시 조금 더 짙은 파란색으로 변경 */
+.prose a:hover {
+  color: #1e40af !important; /* text-blue-800 */
 }
